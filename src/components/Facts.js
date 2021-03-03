@@ -1,4 +1,26 @@
 import React, {useState, useEffect} from "react";
+import styled from 'styled-components'
+
+const FactsWrapper = styled.section`
+  width: 1000px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 10px 20px;
+  text-align: start;
+`;
+
+const StyledListItem = styled.li`
+  margin: 10px;
+  padding: 3px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #e0e0e0 
+  
+  `;
 
 
 export default function Facts() {
@@ -21,13 +43,13 @@ export default function Facts() {
   console.log(facts);
     
   return (
-    <div>
-      <h3>Facts</h3>
-      <ol style={}>
+    <FactsWrapper>
+      <h3>Cat Facts:</h3>
+      <ol>
        {facts.map((fact, index) =>{
-         return <li key={fact._id}>{fact.text}</li>
+         return <StyledListItem  key={fact._id}>{fact.text}</StyledListItem>
        })} 
       </ol>
-    </div>
+    </FactsWrapper>
   );
 }

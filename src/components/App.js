@@ -1,10 +1,10 @@
 import React from "react";
 import Nav from './Nav'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import About from "./About";
+import About from './About';
 import Facts from "./Facts";
 import Home from './Home'
-
+import Example from './Example';
 
 function App() {
 
@@ -16,10 +16,14 @@ function App() {
       <Nav/>
       <Switch>
       <Route path='/' exact component={Home}/>
-      <Route path='/about' component={About}/>
+      <Route path='/about'>
+          <About/>
+      </Route>
+      <Route path='/examples' component={Example}/>
       <Route path='/facts' component={Facts}/>
       </Switch>
       
+
     </div>
     </Router>
    

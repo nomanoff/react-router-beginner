@@ -29,6 +29,10 @@ export default function Nav() {
             <Link to='/facts'>
               <li>Facts</li>   
             </Link>
+            <Link to='/examples'>
+              <li>Examples</li>   
+            </Link>
+           
          
          
       </ul>

@@ -6,6 +6,9 @@
   font-family: "Montserrat", sans-serif;
 }
 
+li {
+  list-style: none;
+}
 .wrapper {
   width: 100%;
   max-width: 1100px;
@@ -25,4 +28,8 @@
   text-decoration: none;
   list-style: none;
   color: #7dc5ff;
+}
+
+.active-link {
+  color: red;
 }
